@@ -1173,12 +1173,7 @@ section,
 #proyecto{
   width: 250px;
   height: 125px;
-}
-
-#proyecto2{
-  width: 70px;
-  height: 40px;
-  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 
@@ -1246,6 +1241,11 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+#aviso{
+  font-size: 11px;
+  color: #818080; 
 }
 
 /*--------------------------------------------------------------

@@ -7,9 +7,6 @@ Este es mi portfolio profesional como Desarrollador Web Junior. Este portafolio 
 - HTML5
 - CSS3
 - JavaScript
-- PHP
-- Laravel
-- MySQL
 - Bootstrap
 - Git & GitHub
 

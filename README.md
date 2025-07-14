@@ -2,7 +2,7 @@
 
 Este es mi portfolio profesional como Desarrollador Web Junior. Este portafolio ha sido creado con ilusión y ganas de aprender. Adaptado por mí a partir de una plantilla
 
-## ⚙️ Tecnologías principales
+## ⚙️ Tecnologías utilizadas
 
 - HTML5
 - CSS3

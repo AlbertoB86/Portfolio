@@ -201,4 +201,34 @@
 
   });
 
+  document.querySelectorAll('.features-item').forEach(item => {
+  const percent = parseInt(item.getAttribute('data-progress'));
+  
+  // Ajustar ancho de la barra
+  item.style.setProperty('--progress', percent + '%');
+  item.querySelector('::before'); // pseudo-elemento no seleccionable, usamos CSS var
+  item.querySelector('::before'); // no necesario, se gestiona con CSS var
+
+  // Animar barra usando CSS variable
+  item.style.setProperty('--progress', percent + '%');
+  item.querySelector('::before'); // no hace falta JS adicional
+
+  // Determinar nivel
+  let level = '';
+  if(percent <= 24){
+    level = 'En formación';
+  } else if(percent <= 49){
+    level = 'Bajo';
+  } else if(percent <= 74){
+    level = 'Intermedio';
+  } else if(percent <= 90){
+    level = 'Alto';
+  } else {
+    level = 'Experto';
+  }
+
+  // Mostrar texto
+  item.querySelector('.level-text').textContent = level;
+});
+
 })();

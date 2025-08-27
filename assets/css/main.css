@@ -315,12 +315,15 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
+    position: absolute;
+    top: 20px;      /* Ajusta según tu header */
+    right: 20px;    /* Esquina superior derecha */
+    font-size: 32px;
+    z-index: 10000;
+    margin-right: 0;
     color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+    background: none;
+    border: none;
   }
 
   .navmenu {
@@ -335,6 +338,7 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
+    max-height: 250px !important;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -913,10 +917,40 @@ section,
   background-color: var(--surface-color);
   display: flex;
   align-items: center;
+  gap: 10px;
   padding: 20px;
   transition: 0.3s;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+  overflow: hidden;
+}
+
+/* Barra de progreso */
+.interests .features-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--progress, 0%);; /* se llenará según porcentaje */
+  background-color: rgba(18, 223, 114, 0.2); /* color de la barra */
+  z-index: 0; /* detrás del contenido */
+  transition: width 1s ease-in-out;
+}
+
+.interests .features-item > * {
+  position: relative;
+  z-index: 1;
+}
+
+.interests .features-item .level-text {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .interests .features-item i {
@@ -945,6 +979,11 @@ section,
 
 .interests .features-item:hover h3 a {
   color: var(--accent-color);
+}
+
+.interests .features-item img,
+.interests .features-item h3 {
+  flex-shrink: 0;  /* evita que se deformen */
 }
 
 /*--------------------------------------------------------------
@@ -1174,6 +1213,12 @@ section,
   width: 250px;
   height: 125px;
   margin-bottom: 10px;
+}
+
+#trabajando{
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 50px;
 }
 
 

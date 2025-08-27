@@ -24,11 +24,7 @@ El sitio incluye:
 ## 🌍 Ver portfolio online
 
 Puedes verlo online en:
-👉  **Próximamente publicado en GitHub Pages**
-
-## 💻 Instalación local
-1. Clona el repositorio
-2. Abre index.html en tu navegador
+👉  **Próximamente publicado**
 
 ## 📫 Contacto
 
